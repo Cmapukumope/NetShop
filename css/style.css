@@ -1,0 +1,313 @@
+/* main */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background: #FFFFFF;
+  /*Убрать коммент, чтобы фон не тянулся*/
+  /*Не совсем понимаю задумку дизайнера...*/
+  /* 
+  max-width: 1600px;
+  margin: 0 auto;
+  */
+}
+.wrap {
+  width: 1140px;
+  margin: 0 auto;
+  /*outline: 1px solid red;*/
+}
+/* main */
+
+/* header */
+.header {
+  background: #222222;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  background: #222222;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 41px;
+}
+.account {
+  display: flex;
+  align-items: center;
+}
+.account-img {
+  margin: 0 34px;
+}
+.cart-div {
+  position: relative;
+  margin-right: 10px;
+}
+.cart-div-img {
+  position: absolute;
+  left: 25px;
+  bottom: 21px;
+}
+.cart-div-text {
+  position: absolute;
+  left: 30px;
+  bottom: 22px;
+  color: #FFFFFF;
+}
+/* header */
+
+/* promo */
+.promo {
+  background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%); 
+}
+.promo-wrap {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%);
+}
+.promo-wrap-img {
+  margin-left: -226px;
+}
+.promo-heading {
+  padding-left: 16px;
+  margin-left: 64px;
+  border-left: 12px solid #F16D7F;
+  text-align: left;
+}
+.promo-text-heading {
+  color: #222222;
+  font-weight: 900;
+  font-size: 48px;
+}
+.promo-text-desc{
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+}
+/* promo */
+
+/* categories */
+.categories {}
+.сategories-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.categories-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+.categories-img {
+  display: block;
+}
+.categories-desc {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.categories-card-heading {
+  color: #FFFFFF;
+}
+.categories-card-desc {
+  font-size: 24px;
+  color: #F16D7F;
+  font-weight: 700;
+}
+/* categories */
+
+/* products */
+.products {}
+.products-wrap {
+  margin-top: 64px;
+}
+.products-heading {
+  color: #222222;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.products-desc {
+  color: #9F9F9F;
+  font-size: 14px;
+}
+.products-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.products-catalog-card {
+  max-width: 360px;
+  text-align: left;
+  background: #F8F8F8;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products-catalog-desc {
+  margin: 25.35px 18px 20px 18px;
+}
+.products-card-heading {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 25.35px 18px 12.65px 18px;
+}
+.products-card-desc {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  color: #5D5D5D;
+  margin: 0 16.46px;
+}
+.products-card-price {
+  color: #F16D7F;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  margin: 18px 18px 20px 18px;
+}
+.products-catalog-button {
+  text-decoration: none;
+  padding: 14.5px 38.5px;
+  border: 1px solid #FF6A6A;
+  color: #F26376;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 95.5px;
+  margin-top: 18.5px;
+}
+/* products */
+
+/* advantages */
+.advantages {
+  background: #222224;
+  color: #FBFBFB;
+  font-size: 19.96px;
+  line-height: 24px;
+}
+.advantages-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 341px;
+  background: #222224;
+}
+.advantages-card{
+  max-width: 360px;
+}
+.advantages-heading {
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+.advantages-description {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+}
+/* advantages */
+
+/* feedback */
+.feedback{
+  background-image: url(../img/feedback-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*Весьма верояно это кривая заплатка*/
+  min-width: 1140px;
+  /*Проблемы с масштабом, разрешением, уезжает bgi*/
+}
+.feedback-wrap {
+  min-height: 448px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.feedback-msg {
+  max-width: 359.45px;
+  color: #222224;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+}
+.feedback-img {
+  margin-bottom: 30px;
+}
+.feedback-subscribe {
+  font-weight: bold;
+  font-size: 24px;
+  max-width: 356px;
+}
+.feedback-subscribe-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.3px;
+  margin-bottom: 32px;
+}
+.feedback-form {
+  display: flex;
+}
+.feedback-mail-form {
+  border-radius: 24.5px 0 0 24.5px;
+  padding: 7px 64px 6px 22px; 
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  height: 49px;
+  font-family: 'Lato';
+  width: 256px;
+  background: #E1E1E1;
+}
+.feedback-mail-form:focus {
+  outline: none;
+}
+.feedback-button-sub {
+  height: 49px;
+  border-radius: 0 24.5px 24.5px 0;
+  background: #F16D7F;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100px;
+  font-family: 'Lato';
+}
+.feedback-button-sub:focus {
+  outline: none;
+}
+/* feedback */
+
+/* Футер */
+.footer {
+  background-color: #222224;
+  color: #FBFBFB;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  min-height: 79px;
+  align-items: center;
+  background: #222224;
+}
+/* Футер */
