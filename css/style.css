@@ -134,7 +134,7 @@ body {
 /* products */
 .products {}
 .products-wrap {
-  margin-top: 64px;
+  /*margin-top: 64px;*/
 }
 .products-heading {
   color: #222222;
@@ -142,16 +142,17 @@ body {
   line-height: 36px;
   font-weight: 400;
   margin-bottom: 6px;
+  margin-top: 67px;
 }
 .products-desc {
   color: #9F9F9F;
   font-size: 14px;
+  margin-bottom: 48px;
 }
 .products-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 48px;
 }
 .products-catalog-card {
   max-width: 360px;
@@ -162,6 +163,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.product-catalog-desc-wrap {}
 .products-catalog-desc {
   margin: 25.35px 18px 20px 18px;
 }
@@ -170,6 +172,8 @@ body {
   line-height: 16px;
   font-weight: 700;
   margin: 25.35px 18px 12.65px 18px;
+  max-height: 16px;
+  overflow: hidden;
 }
 .products-card-desc {
   font-size: 14px;
@@ -177,6 +181,8 @@ body {
   margin-bottom: 18px;
   color: #5D5D5D;
   margin: 0 16.46px;
+  overflow: hidden;
+  max-height: 50.4px;
 }
 .products-card-price {
   color: #F16D7F;
@@ -184,6 +190,8 @@ body {
   line-height: 19px;
   font-weight: 400;
   margin: 18px 18px 20px 18px;
+  max-height: 18.4px;
+  overflow: hidden;
 }
 .products-catalog-button {
   text-decoration: none;
@@ -311,3 +319,80 @@ body {
   background: #222224;
 }
 /* Футер */
+
+/* Каталог */
+.catalog-headings-links{
+  background-color: #F8F3F4;
+}
+.catalog-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  background-color: #F8F3F4;
+}
+.catalog-heading{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #F16D7F;
+}
+.catalog-links{
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.catalog-links-pos {
+  display: inline;
+}
+.catalog-links-style{
+  text-decoration: none;
+  color: #636363;
+}
+/* Каталог */
+
+/* Каталог фильтр */
+.catalog-filter {}
+.catalog-filter-wrap {
+  height: 132px;
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+details summary {
+  display: flex;
+  position: relative;
+  z-index: 20;
+}
+
+/* Каталог фильтр */
+
+/* Страница товара */
+/* Слайдер */
+.product-slider {
+  background-color: #F7F7F7;
+  
+}
+.product-slider-wrap {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+.product-slider-pagination {
+  height: 47px;
+  width: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Слайдер */
+
+/* Слайдер */
+/* Страница товара */
