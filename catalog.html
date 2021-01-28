@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index page</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1 hidden="true">Main page</h1>
-  <!-- HEADER Start-->
+<h1 hidden="true">Catalog</h1>
+ <!-- HEADER Start-->
   <!-- -->
   <header class="header">
     <div class="wrap header-wrap">
@@ -31,55 +31,76 @@
     </div>
   </header>
   <!-- HEADER End-->
+<main>
+  <!-- CATALOG Headings-links -->
+  <div class="catalog-headings-links">
+      <div class="wrap catalog-wrap">
+        <h2 class="catalog-heading">NEW ARRIVALS</h2>
+        
+        <ul class="catalog-links">
+            <li class="catalog-links-pos"><a class="catalog-links-style" href="#">HOME</a></li>
+            <li class="catalog-links-pos">/</li>
+            <li class="catalog-links-pos"><a class="catalog-links-style" href="#">MEN</a></li>
+            <li class="catalog-links-pos">/</li>
+            <li class="catalog-links-pos"><a class="catalog-links-style" href="#">NEW ARRIVALS</a></li>
+        </ul>
 
-  <!-- PROMO Start-->
-  <!--  -->
-  <section class="promo">
-    <div class="wrap promo-wrap">
-      <img class="promo-wrap-img" src="img/promo-man.png" alt="">
-      <div class="promo-heading">
-        <h1 class="promo-text-heading">THE BRAND</h1>
-        <span class="promo-text-desc">OF LUXERIOUS</span><span class="promo-text-desc" style="color: #F16D7F;"> FASHION</span>
-      </div>    
+      </div>
+  </div>
+  <!-- CATALOG Headings-links -->
+
+  <!-- CATALOG Filter wrap -->
+  <!-- details summary -->
+  <div class="catalog-filter">
+    <div class="wrap catalog-filter-wrap">
+      
+            <details class="catalog-cloth-filter">
+                <summary class="catalog-filter-heading">FILTER<img class="catalog-filter-img" src="img/catalog-filter-img.svg" alt=""></summary>
+                <details>
+                    <summary class="catalog-filter-heading">CATEGORY</summary>
+                    <ul>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>Hoodies & Sweatshirts</li>
+                        <li>Jackets & Coats</li>
+                        <li>Polos</li>
+                        <li>Shirts</li>
+                        <li>Shoes</li>
+                        <li>Sweaters & Knits</li>
+                        <li>T-Shirts</li>
+                        <li>Tanks</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary class="catalog-filter-heading">BRAND</summary>
+                </details>
+                <details>
+                    <summary class="catalog-filter-heading">DESIGNER</summary>
+                </details>
+            </details>
+
+            <details>
+              <summary>TRENDING NOW<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>SIZE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>PRICE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
     </div>
-  </section>
-  <!-- PROMO End-->
-
-  <!-- CATEGORIES Start-->
-  <!--  -->
-  <section class="categories">
-    <div class="wrap сategories-wrap">
-
-      <div class="categories-card">
-        <a href="#"><img class="categories-img" src="img/cat-for-w.jpg" alt=""></a>
-        <a class="categories-desc" href="#"><p class="categories-card-heading">30% OFF</p><p class="categories-card-desc">FOR WOMEN</p></a>
-      </div>
-
-      <div class="categories-card">
-        <a href="#"><img class="categories-img" src="img/cat-for-m.jpg" alt=""></a>
-        <a class="categories-desc" href="#"><p class="categories-card-heading">HOT DEAL</p><p class="categories-card-desc">FOR MEN</p></a>
-      </div>
-
-      <div class="categories-card">
-        <a href="#"><img class="categories-img" src="img/cat-for-k.jpg" alt=""></a>
-        <a class="categories-desc" href="#"><p class="categories-card-heading">NEW ARRIVALS</p><p class="categories-card-desc">FOR KIDS</p></a>
-      </div>
-
-      <div class="categories-card">
-        <a href="#"><img class="categories-img" src="img/cat-acc.jpg" alt=""></a>
-        <a class="categories-desc" href="#"><p class="categories-card-heading">LUXIROUS & TRENDY</p><p class="categories-card-desc">ACCESORIES</p></a>
-      </div>
-   
-    </div>
-  </section>
-  <!-- CATEGORIES End-->
+  </div>
+  <!-- CATALOG Filter wrap -->
 
   <!-- PRODUCTS Start-->
   <!-- ------------ -->
   <section class="products">
     <div class="wrap products-wrap">
-      <h2 class="products-heading">Fetured Items</h2>
-      <p class="products-desc">Shop for items based on what we featured in this week</p>
+      
       <div class="products-cont">
         
         <div class="products-catalog-card">
@@ -136,14 +157,64 @@
             </div>
         </div>
 
+        <div class="products-catalog-card">
+            <a href="#"><img src="img/product-img-6.jpg" alt=""></a>
+              <div class="product-catalog-desc-wrap">
+                <p class="products-card-heading">ELLERY X M'O CAPSULE</p>
+                <p class="products-card-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-card-price">$52.00</p>
+              </div>
+        </div>
+
+        <div class="products-catalog-card">
+            <a href="#"><img src="img/product-img-6.jpg" alt=""></a>
+              <div class="product-catalog-desc-wrap">
+                <p class="products-card-heading">ELLERY X M'O CAPSULE</p>
+                <p class="products-card-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-card-price">$52.00</p>
+              </div>
+        </div>
+
+        <div class="products-catalog-card">
+            <a href="#"><img src="img/product-img-6.jpg" alt=""></a>
+              <div class="product-catalog-desc-wrap">
+                <p class="products-card-heading">ELLERY X M'O CAPSULE</p>
+                <p class="products-card-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="products-card-price">$52.00</p>
+              </div>
+        </div>
+
+      </div>
+
+      <div class="products-catalog-pagination">
+     
+         <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black"/>
+          </svg>
+         </button>
+        
+        <div class="products-catalog-page-number">
+          <a class="products-catalog-page-link products-catalog-page-link-active" href="#">1</a>
+          <a class="products-catalog-page-link" href="#">2</a>
+          <a class="products-catalog-page-link" href="#">3</a>
+          <a class="products-catalog-page-link" href="#">4</a>
+          <a class="products-catalog-page-link" href="#">5</a>
+          <a class="products-catalog-page-link" href="#">6.....20</a>
+        </div>
+
+        <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
+          </svg>            
+        </button>
+                 
       </div>
       
-      <a class="products-catalog-button" href="#">Browse All Product</a>
-
     </div>
   </section>
   <!-- PRODUCTS End-->
-
+</main>
   <!-- ADVANTAGES Start-->
   <!--  -->
   <aside class="advantages">
@@ -214,6 +285,5 @@
     </div>
   </footer>
   <!-- FOOTER End-->
-
 </body>
 </html>
