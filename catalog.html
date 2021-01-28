@@ -53,12 +53,11 @@
   <!-- details summary -->
   <div class="catalog-filter">
     <div class="wrap catalog-filter-wrap">
-
-        <div>
-            <details>
-                <summary>FILTER<img src="img/catalog-filter-img.svg" alt=""></summary>
+      
+            <details class="catalog-cloth-filter">
+                <summary class="catalog-filter-heading">FILTER<img class="catalog-filter-img" src="img/catalog-filter-img.svg" alt=""></summary>
                 <details>
-                    <summary>CATEGORY</summary>
+                    <summary class="catalog-filter-heading">CATEGORY</summary>
                     <ul>
                         <li>Accessories</li>
                         <li>Bags</li>
@@ -74,13 +73,24 @@
                     </ul>
                 </details>
                 <details>
-                    <summary>BRAND</summary>
+                    <summary class="catalog-filter-heading">BRAND</summary>
                 </details>
                 <details>
-                    <summary>DESIGNER</summary>
+                    <summary class="catalog-filter-heading">DESIGNER</summary>
                 </details>
             </details>
-        </div>
+
+            <details>
+              <summary>TRENDING NOW<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>SIZE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>PRICE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
 
     </div>
   </div>
@@ -174,6 +184,31 @@
               </div>
         </div>
 
+      </div>
+
+      <div class="products-catalog-pagination">
+     
+         <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black"/>
+          </svg>
+         </button>
+        
+        <div class="products-catalog-page-number">
+          <a class="products-catalog-page-link products-catalog-page-link-active" href="#">1</a>
+          <a class="products-catalog-page-link" href="#">2</a>
+          <a class="products-catalog-page-link" href="#">3</a>
+          <a class="products-catalog-page-link" href="#">4</a>
+          <a class="products-catalog-page-link" href="#">5</a>
+          <a class="products-catalog-page-link" href="#">6.....20</a>
+        </div>
+
+        <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
+          </svg>            
+        </button>
+                 
       </div>
       
     </div>
