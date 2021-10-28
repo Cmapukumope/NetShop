@@ -1,2 +1,2 @@
 # NetShop
-newbee-coder from dark-side
+newbee-coder
