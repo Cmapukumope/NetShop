@@ -20,14 +20,14 @@
 
         <div class="logo">
           <a class="header-logo" href="#"><img src="img/logo.png" alt=""></a>
-          <a href="#"><img src="img/search.svg" alt=""></a>
+          <button class="search-button"><img src="img/search.svg" alt=""></button>
         </div>
 
         <div class="account">
-          <a href="#"><img src="img/menu.png" alt=""></a>
-          <a href="#"><img class="account-img" src="img/account.png" alt=""></a>
+          <button class="main-menu-button"><img src="img/menu.svg" alt=""></button>
+          <a href="#" class="account-img"><img src="img/account.svg" alt=""></a>
           <div class="cart-div">
-            <a href="#"><img src="img/cart.png" alt=""><img class="cart-div-img" src="img/cart-number.png" alt=""><span class="cart-div-text">5</span></a>
+            <a href="#"><img src="img/cart.svg" alt=""><img class="cart-div-img" src="img/cart-number.png" alt=""><span class="cart-div-text">5</span></a>
           </div>       
         </div>
       
@@ -44,10 +44,12 @@
       
       <div class="promo-wrap">
       
-        <img class="promo-wrap-img" src="img/promo-man.png" alt="">
-        <div class="promo-heading">
-          <h1 class="promo-text-heading">THE BRAND</h1>
-          <span class="promo-text-desc">OF LUXERIOUS</span><span class="promo-text-desc" style="color: #F16D7F;"> FASHION</span>
+       
+        <div class="promo-title">
+          <h1 class="promo-title-heading">
+            THE BRAND<br>
+            <span class="promo-title-small">OF LUXERIOUS <span class="promo-title-pink">FASHION</span></span>
+          </h1>
         </div>
       
       </div>
@@ -67,7 +69,7 @@
         <div class="сategories-wrap">
 
           <div class="categories-card">
-            <a href="#"></a><img class="categories-img" src="img/cat-for-w.jpg" alt=""></a>
+            <a href="#"><img class="categories-img" src="img/cat-for-w.jpg" alt=""></a>
             <a class="categories-desc" href="#"><p class="categories-card-heading">30% OFF</p><p class="categories-card-desc">FOR WOMEN</p></a>
           </div>
 
@@ -81,7 +83,7 @@
             <a class="categories-desc" href="#"><p class="categories-card-heading">NEW ARRIVALS</p><p class="categories-card-desc">FOR KIDS</p></a>
           </div>
 
-          <div class="categories-card">
+          <div class="categories-card categories-card-long">
             <a href="#"><img class="categories-img" src="img/cat-acc.jpg" alt=""></a>
             <a class="categories-desc" href="#"><p class="categories-card-heading">LUXIROUS & TRENDY</p><p class="categories-card-desc">ACCESORIES</p></a>
           </div>
@@ -223,7 +225,7 @@
           <p>SUBSCRIBE</p>
           <p class="feedback-subscribe-descr">FOR OUR NEWLETTER AND PROMOTION</p>
           <form class="feedback-form" action="#">
-            <input class="feedback-mail-form" type="text" placeholder="Enter Your Email">
+            <input class="feedback-mail-form" type="email" required placeholder="Enter Your Email">
             <input class="feedback-button-sub" type="submit" value="Subscribe">
           </form>
         </div>
