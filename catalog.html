@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Index page</title>
+    <script src="https://kit.fontawesome.com/2bc85cd618.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
 <body>
 <h1 hidden="true">Catalog</h1>
  <!-- HEADER Start-->
@@ -16,18 +18,19 @@
     <div class="wrap header-wrap">
       
       <div class="logo">
-        <a class="header-logo" href="#"><img src="img/logo.svg" alt=""></a>
-        <a href="#"><img src="img/search.svg" alt=""></a>
+       <a class="header-logo" href="#"><img src="img/logo.png" alt=""></a>
+       <button class="search-button"><img src="img/search.svg" alt=""></button>
       </div>
 
-      <div class="account">
-        <a href="#"><img src="img/menu.png" alt=""></a>
-        <a href="#"><img class="account-img" src="img/account.png" alt=""></a>
-        <div class="cart-div">
-          <a href="#"><img src="img/cart.png" alt=""><img class="cart-div-img" src="img/cart-number.png" alt=""><span class="cart-div-text">5</span></a>
-        </div>       
-      </div>
-      
+      <nav class="account">
+        <ul class="account">
+          <li class="account-list"><button class="main-menu-button account-list"><img src="img/menu.svg" alt=""></button></li>
+          <li class="account-list"><a href="#" class="account-img account-list"><img src="img/account.svg" alt=""></a></li>
+          <li class="cart-div account-list">
+            <a href="#" class="account-list"><img src="img/cart.svg" alt=""><img class="cart-div-img" src="img/cart-number.png" alt=""><span class="cart-div-text">5</span></a>
+          </li>           
+        </ul>
+      </nav>
     </div>
   </header>
   <!-- HEADER End-->
@@ -53,12 +56,11 @@
   <!-- details summary -->
   <div class="catalog-filter">
     <div class="wrap catalog-filter-wrap">
-
-        <div>
-            <details>
-                <summary>FILTER<img src="img/catalog-filter-img.svg" alt=""></summary>
+      
+            <details class="catalog-cloth-filter">
+                <summary class="catalog-filter-heading">FILTER<img class="catalog-filter-img" src="img/catalog-filter-img.svg" alt=""></summary>
                 <details>
-                    <summary>CATEGORY</summary>
+                    <summary class="catalog-filter-heading">CATEGORY</summary>
                     <ul>
                         <li>Accessories</li>
                         <li>Bags</li>
@@ -74,13 +76,24 @@
                     </ul>
                 </details>
                 <details>
-                    <summary>BRAND</summary>
+                    <summary class="catalog-filter-heading">BRAND</summary>
                 </details>
                 <details>
-                    <summary>DESIGNER</summary>
+                    <summary class="catalog-filter-heading">DESIGNER</summary>
                 </details>
             </details>
-        </div>
+
+            <details>
+              <summary>TRENDING NOW<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>SIZE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
+
+            <details>
+              <summary>PRICE<img class="catalog-filter-img" src="img/catalog-filter-arrow-img.svg" alt=""></summary>
+            </details>
 
     </div>
   </div>
@@ -175,6 +188,31 @@
         </div>
 
       </div>
+
+      <div class="products-catalog-pagination">
+     
+         <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" fill="black"/>
+          </svg>
+         </button>
+        
+        <div class="products-catalog-page-number">
+          <a class="products-catalog-page-link products-catalog-page-link-active" href="#">1</a>
+          <a class="products-catalog-page-link" href="#">2</a>
+          <a class="products-catalog-page-link" href="#">3</a>
+          <a class="products-catalog-page-link" href="#">4</a>
+          <a class="products-catalog-page-link" href="#">5</a>
+          <a class="products-catalog-page-link" href="#">6.....20</a>
+        </div>
+
+        <button class="products-catalog-pagination-arrow">
+          <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
+          </svg>            
+        </button>
+                 
+      </div>
       
     </div>
   </section>
@@ -183,26 +221,26 @@
   <!-- ADVANTAGES Start-->
   <!--  -->
   <aside class="advantages">
-
+    <h2 class="hidden">Advantages</h2>
     <div class="wrap advantages-wrap">
 
-      <div class="advantages-card">
-        <img src="img/advantages-delivery-img.svg" alt="">
-        <p class="advantages-heading">Free Delivery</p>
-        <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </div>
+        <div class="advantages-card">
+          <img src="img/advantages-delivery-img.svg" alt="">
+          <h3 class="advantages-heading">Free Delivery</h3>
+          <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
 
-      <div class="advantages-card">
-        <img src="img/advantages-sales-img.svg" alt="">
-        <p class="advantages-heading">Sales & discounts</p>
-        <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </div>
+        <div class="advantages-card">
+          <img src="img/advantages-sales-img.svg" alt="">
+          <h3 class="advantages-heading">Sales & discounts</h3>
+          <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
 
-      <div class="advantages-card">
-        <img src="img/advantages-quality-img.svg" alt="">
-        <p class="advantages-heading">Quality assurance</p>
-        <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-      </div>
+        <div class="advantages-card">
+          <img src="img/advantages-quality-img.svg" alt="">
+          <h3 class="advantages-heading">Quality assurance</h3>
+          <p class="advantages-description">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+        </div>
 
     </div>
   
@@ -212,25 +250,25 @@
   <!-- FEEDBACK Start-->
   <!--  -->
   <aside class="feedback">
-
+    <h2 class="hidden">Feedback</h2>
     <div class="wrap feedback-wrap">
       
-      <div class="feedback-msg">
+        <div class="feedback-msg">
+          <h3 class="hidden">Review</h3>
+          <figure><img class="feedback-img" src="img/feedback-img.png" alt="">
+            <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>           
+          </figure>
 
-        <figure><img class="feedback-img" src="img/feedback-img.png" alt="">
-          <figcaption>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>           
-        </figure>
+        </div>
 
-      </div>
-
-      <div class="feedback-subscribe">
-        <p>SUBSCRIBE</p>
-        <p class="feedback-subscribe-descr">FOR OUR NEWLETTER AND PROMOTION</p>
-        <form class="feedback-form" action="#">
-          <input class="feedback-mail-form" type="text" placeholder="Enter Your Email">
-          <input class="feedback-button-sub" type="submit" value="Subscribe">
-        </form>
-      </div>
+        <div class="feedback-subscribe">
+          <h3 class="hidden">Subscribe</h3>
+          <p class="feedback-subscribe-title">SUBSCRIBE<br>FOR OUR NEWLETTER AND PROMOTION</p>
+          <form class="feedback-form" action="#">
+            <input class="feedback-mail-form" type="email" required placeholder="Enter Your Email">
+            <input class="feedback-button-sub" type="submit" value="Subscribe">
+          </form>
+        </div>
 
     </div>
 
@@ -240,13 +278,36 @@
   <!-- FOOTER Start-->
   <footer class="footer">
     <div class="wrap footer-wrap">
-      <p>© 2021  Brand  All Rights Reserved.</p>
-      <div class="social-networks">
-        <a href="#"><img src="img/social-fasebook-img.svg" alt=""></a>
-        <a href="#"><img src="img/social-insta-img-alt.svg" alt=""></a>
-        <a href="#"><img src="img/social-pinterest-img.svg" alt=""></a>
-        <a href="#"><img src="img/social-twitter-img.svg" alt=""></a>
-      </div>
+
+        <p>© 2021  Brand  All Rights Reserved.</p>
+        <ul class="social-networks">
+
+          <li>
+            <a href="#" target="_blank" class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" class="social-link">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+            
+        </ul>
+
     </div>
   </footer>
   <!-- FOOTER End-->
