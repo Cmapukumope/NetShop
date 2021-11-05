@@ -1,24 +1,8 @@
 @charset "UTF-8";
 /* Переменные */
-/*
-$main-color: #F16D7F;
-
-@mixin list($margin: 0, $padding: 0) {
-    margin: $margin;
-    padding: $padding;
-    list-style-type: none;
-}
-
-.test {
-    color: #000000;
-    &-1 {
-        display: flex;
-    }
-}
-
-@import "_var.scss";
-*/
 /* Переменные */
+/* Миксины */
+/* Миксины */
 /* main */
 * {
   -webkit-box-sizing: border-box;
@@ -45,6 +29,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   text-align: center;
+  list-style-type: none;
   background: #FFFFFF;
   /*Убрать коммент, чтобы фон не тянулся*/
   /*Не совсем понимаю задумку дизайнера...*/
@@ -69,6 +54,28 @@ body {
 }
 
 /* main */
+/* to test */
+.totest {
+  background-color: #9be4ad;
+}
+
+.totest-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 45px;
+  background: #a89cf7;
+  font-size: 50px;
+}
+
+.totest-link {
+  text-decoration: none;
+}
+
+/* to test */
 /* header */
 .header {
   background: #222222;
@@ -85,56 +92,120 @@ body {
   background: #222222;
 }
 
-.logo, .account {
+.header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style-type: none;
 }
 
-.header-logo {
+.header-logo-img {
   margin-right: 41px;
 }
 
-.account-list {
+.header-logo-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  fill: #E8E8E8;
+}
+
+.header-logo-button:hover {
+  fill: #F16D7F;
+}
+
+.header-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.header-account-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-account-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.search-button, .main-menu-button {
-  background-color: transparent;
-  border: none;
-}
-
-.account-img {
+.header-account-list-img {
   margin: 0 33px;
 }
 
-.cart-div {
+.header-account-list-cart {
   position: relative;
-  margin-right: 10px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
 }
 
-.cart-div-img {
+.header-account-list-cart-number {
   position: absolute;
-  left: 25px;
-  bottom: 21px;
-}
-
-.cart-div-text {
-  position: absolute;
-  left: 30px;
-  bottom: 22px;
+  left: 20px;
+  bottom: 17px;
   color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  width: 19px;
+  height: 19px;
 }
 
+/*.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    background: #222222;
+  }*/
+/* .logo, .account{
+    display: flex;
+    align-items: center;
+  }*/
+/*.header-logo {
+    margin-right: 41px;
+  }*/
+/*.account-list {
+      display: inline-flex;
+  }*/
+/* .account-list-button {
+    background-color: transparent;
+    border: none;
+  }*/
+/*.account-list-button {
+    fill: #E8E8E8;
+    &:hover {
+      fill: $main-color;
+    }
+  }*/
+/*  .account-img {
+    margin: 0 33px;
+  } */
+/*  .cart-div {
+    position: relative;
+    margin-right: 10px;
+    display: inline-flex;
+  } */
+/* .cart-div-img {
+    position: absolute;
+    left: 20px;
+    bottom: 17px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    background-color: $main-color;
+    width: 19px;
+    height: 19px;
+  } */
 /* header */
 /* promo */
 .promo {
