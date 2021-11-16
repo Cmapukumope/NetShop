@@ -1,0 +1,59 @@
+@import "../var";
+.header {
+    background: #222222;
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      min-height: 75px;
+      background: #222222;
+    }
+    &-logo {
+      display: flex;
+      align-items: center;
+      &-img {
+        margin-right: 41px;
+      }
+      &-button {
+        display: inline-flex;
+        background-color: transparent;
+        border: none;
+        fill: #E8E8E8;
+        cursor: pointer;
+         &:hover {
+           fill: $main-color;  
+           transition-property: fill;
+           transition-duration: 0.2s;
+           transition-delay: 0.1s;       
+         } 
+      }
+
+    }
+    &-account {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      &-table {
+        display: flex;
+        align-items: center;
+      }
+      &-list {
+        display: inline-flex;
+        &-img {
+          margin: 0 33px;
+        }
+        &-cart {
+          position: relative;
+          &-number {
+            position: absolute;
+            left: 20px;
+            bottom: 17px;
+            color: #FFFFFF;
+            border-radius: 50%;
+            background-color: $main-color;
+            width: 19px;
+            height: 19px;
+          }
+        }
+      }
+    }
+  }

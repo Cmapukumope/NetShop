@@ -1,0 +1,37 @@
+@import "../var";
+.promo {
+    /* background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%); */
+   background-color: #F1E4E6;
+   min-width: 1140px;
+   }
+   .promo-wrap {
+     display: flex;
+     align-items: center;
+     background-image:url(../img/promo-man.png) ;
+     background-repeat: no-repeat;
+     background-position: -225px bottom;
+     min-height: 764px;
+     justify-content: flex-end;
+     text-align: left;
+     /*background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%);*/
+   }
+   .promo-title{
+     font-weight: 900;
+     font-size: 48px;
+     line-height: 40px;
+     color: #222222;
+     border-left: 12px solid #F16D7F;
+     padding-left: 16px;
+     margin-right: 100px;
+   }
+ 
+   .promo-title-small{
+     font-weight: bold;
+     font-size: 32px;
+     line-height: 38px;
+     color: #222222;
+   }
+   .promo-title-pink{
+     color: #F16D7F;
+   }
+   /* promo */

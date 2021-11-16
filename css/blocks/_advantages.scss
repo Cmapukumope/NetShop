@@ -1,0 +1,28 @@
+@import "../var";
+.advantages {
+    background: #222224;
+    color: #FBFBFB;
+    font-size: 19.96px;
+    line-height: 24px;
+  }
+  .advantages-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 341px;
+    background: #222224;
+    padding: 103px 0;
+  }
+  .advantages-card{
+    max-width: 360px;
+  }
+  .advantages-heading {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  .advantages-description {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+  }
