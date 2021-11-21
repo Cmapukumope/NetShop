@@ -15,15 +15,47 @@
     font-size: 24px;
     line-height: 28.8px;
     color: $main-color;
+    animation: cat-hed 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    @keyframes cat-hed {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 0% 50%;
+                transform-origin: 0% 50%;
+      }
+    }
   }
+  
   .catalog-links{
     list-style-type: none;
     font-weight: 300;
     line-height: 16.8px;
     display: flex;
+    animation: cat-link 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+    @keyframes cat-link {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+      }
+    }
   }
+
   .catalog-links-cont  {
-      &:nth-child(-n+2)::after {
+      &:nth-child(-n+10)::after {
         content: "/";
         padding: 0 5px;
       }
@@ -31,15 +63,21 @@
         font-weight: 700;
         color: $main-color;
       }
-      /* &:last-child::after {
+      &:last-child::after {
           content: none;     
-      } */
+      }
   }
   .catalog-links-style{
+    display: inline-block;
     text-decoration: none;
     color: #636363;
+    transition-property: color, transform ;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
     &:hover {
+      transform: scale(1.1, 1.1);
       color: $main-color;
+      font-weight: 700;
     }
   }
 

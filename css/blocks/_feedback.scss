@@ -4,16 +4,31 @@
     background-repeat: no-repeat;
     background-position: center;
     /*Весьма верояно это кривая заплатка*/
-    min-width: 1140px;
+    /* min-width: 1140px; */
     background-size: cover;
+    min-width: 373px;
     /*Проблемы с масштабом, разрешением, уезжает bgi*/
+    * {
+      transition: 0.7s ease-in-out all;
+    }
   }
   .feedback-wrap {
     min-height: 448px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 97px 0;
+    padding: 97px 15px;
+
+    @media (max-width:$tablet-bp) {
+      display: block;
+      padding: 64px 15px 140px 15px;
+      min-height: 0px;
+    }
+
+    @media (max-width:$mobile-bp) {
+      min-width: 343px;
+    }
+
   }
   .feedback-msg {
     max-width: 359.45px;
@@ -21,6 +36,11 @@
     font-size: 20px;
     line-height: 24px;
     font-style: italic;
+
+    @media (max-width:$tablet-bp) {
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
   }
   .feedback-img {
     margin-bottom: 30px;
@@ -31,6 +51,10 @@
     align-items: center;
     max-width: 557px;
     padding: 0 30px;
+
+    @media (max-width:$tablet-bp) {
+      margin: 0 auto;
+    }
   }
   .feedback-subscribe-title {
     font-weight: 400;

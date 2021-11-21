@@ -1,5 +1,9 @@
 @import "../var";
-.categories {}
+.categories {
+  * {
+    transition: 0.7s ease-in-out all;
+  }
+}
   .сategories-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -8,17 +12,40 @@
     padding-bottom: 96px;
     gap: 30px;
     list-style-type: none;
+    @media (max-width:$tablet-bp) {
+      gap: 19px;
+      padding-bottom: 154px;
+    }
+    @media (max-width:$mobile-bp) {
+      min-width: 343px;
+      flex-direction: column;     
+    }
   }
   .categories-card {
     background-color: #C4C4C4;
     height: 260px;
-    width: 360px;   
+    /* width: 360px;  */  
+    width: 31.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: $shadow;
+    }
+
+    @media (max-width:$tablet-bp) {
+      height: 232px;
+    }
+
+    @media (max-width:$mobile-bp) {
+      width: 100%;
+      height: 247px;
+      gap: 32px;
+    }
   }
   .categories-card:nth-child(1){
     background-image: url(../img/cat-for-w.jpg);
@@ -33,6 +60,10 @@
     width: 100%;
     height: 180px;
     background-image: url(../img/cat-acc.jpg);
+    
+    @media (max-width:$tablet-bp) {
+      height: 116px;
+    }
   }
   .categories-desc {
     text-decoration: none;  

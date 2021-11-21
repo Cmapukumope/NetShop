@@ -4,6 +4,9 @@
     color: #FBFBFB;
     font-size: 19.96px;
     line-height: 24px;
+    * {
+      transition: 0.7s ease-in-out all;
+    }
   }
   .advantages-wrap {
     display: flex;
@@ -11,10 +14,26 @@
     align-items: center;
     min-height: 341px;
     background: #222224;
-    padding: 103px 0;
+    padding: 103px 15px;
+
+    @media (max-width:$tablet-bp) {
+      flex-direction: column;
+      gap: 48px;
+      padding: 48px 15px;
+    }
+
+    @media (max-width:$mobile-bp) {
+      min-width: 343px;
+      gap: 46px;
+    }
+  
   }
   .advantages-card{
     max-width: 360px;
+
+    @media (max-width:$mobile-bp) {
+      max-width: 347px;
+    }
   }
   .advantages-heading {
     margin-top: 28px;

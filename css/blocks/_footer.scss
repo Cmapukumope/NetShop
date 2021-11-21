@@ -4,19 +4,36 @@
     color: #FBFBFB;
     font-size: 16px;
     line-height: 19px;
+    * {
+      transition: 0.7s ease-in-out all;
+    }
   }
   .footer-wrap {
     display: flex;
     justify-content: space-between;
-    min-height: 79px;
+    /* min-height: 79px; */
     align-items: center;
     background: #222224;
-    padding: 21px 0;
+    padding: 23px 15px;
+
+    @media (max-width:$tablet-bp) {
+      padding: 23px 30px;
+    }
+
+    @media (max-width:$mobile-bp) {
+      min-width: 343px;
+      flex-direction: column-reverse;
+      padding: 43px 15px 9px 15px;
+    }
   }
   .social-networks {
     display: flex;
     list-style-type: none;
     gap: 7px;
+
+    @media (max-width:$mobile-bp) {
+      padding-bottom: 40px;
+    }
   }
 
   .social-link {

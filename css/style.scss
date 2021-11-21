@@ -1,49 +1,9 @@
 @import "_var.scss";
 @import "_mixins.scss";
-@import "blocks/_button.scss";
-
 /* index index index index index index */
-/* Основа */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    text-align: center;
-    list-style-type: none;
-    background: #FFFFFF;
-    /*Убрать коммент, чтобы фон не тянулся*/
-    /*Не совсем понимаю задумку дизайнера...*/
-    /* 
-    max-width: 1600px;
-    margin: 0 auto;
-    */
-  }
-  .wrap {
-    width: 1140px;
-    margin: 0 auto;
-    /*outline: 1px solid red;*/
-  }
-  .hidden {
-      width: 1px;
-      height: 1px;
-      position: absolute;
-      left: -999999px;
-      margin: -1px;
-  }
-/* Основа */
+@import "blocks/main";
 
+@import "blocks/_button.scss";
 /* to test */
 @import "blocks/totest";
 /* to test */
@@ -633,3 +593,4 @@
   }
   /* Корзина */
   
+

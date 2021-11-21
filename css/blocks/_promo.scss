@@ -2,34 +2,93 @@
 .promo {
     /* background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%); */
    background-color: #F1E4E6;
-   min-width: 1140px;
+   /* min-width: 1140px; */
    }
    .promo-wrap {
      display: flex;
      align-items: center;
      background-image:url(../img/promo-man.png) ;
      background-repeat: no-repeat;
-     background-position: -225px bottom;
+     background-position: -215px bottom;
+     background-color: #F1E4E6;
      min-height: 764px;
      justify-content: flex-end;
      text-align: left;
+     transition: 1s ease-in-out all;
      /*background: linear-gradient(to right, rgba(113, 103, 105, 0.08) 50%, #F1E4E6 50%);*/
+     @media (max-width:$tablet-bp) {
+       min-height: 386px;
+       /* background-position: 0 0; */
+       background-position-x: 0;
+       transition: 1s ease-in-out all;
+       background-size: contain;
+     }
+
+     @media (max-width:$mobile-bp) {
+      min-width: 343px;
+      /* background-image: none; */
+      justify-content: center;
+      transition: 1s ease-in-out all;
+      background-position-x: -500px;
+
+     }
    }
    .promo-title{
      font-weight: 900;
      font-size: 48px;
-     line-height: 40px;
+     line-height: 58px;
      color: #222222;
      border-left: 12px solid #F16D7F;
      padding-left: 16px;
      margin-right: 100px;
+	   animation: promo-heading-rot 0.65s linear both ,promo-heading-color 0.65s linear both;
+
+     @media (max-width:$tablet-bp) {
+       margin-right: 16px;
+       font-size: 44px;
+       line-height: 52.8px;
+     }
    }
- 
+
+  @keyframes promo-heading-rot {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+
+  @keyframes promo-heading-color {
+    0% {
+      /* -webkit-transform: scale(1) rotateZ(0); */
+              border-left: 12px solid green;
+    }
+    50% {
+      /* -webkit-transform: scale(2) rotateZ(180deg); */
+      border-left: 12px solid red;
+    }
+    100% {
+      /* -webkit-transform: scale(1) rotateZ(360deg); */
+      border-left: 12px solid $main-color;
+    }
+  }
    .promo-title-small{
-     font-weight: bold;
+     font-weight: 700;
      font-size: 32px;
      line-height: 38px;
      color: #222222;
+     display: block;
+     @media (max-width:$tablet-bp) {
+      font-size: 24px;
+      line-height: 29px;
+     }
    }
    .promo-title-pink{
      color: #F16D7F;
