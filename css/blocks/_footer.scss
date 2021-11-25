@@ -1,60 +1,59 @@
 @import "../var";
 .footer {
-    background-color: #222224;
-    color: #FBFBFB;
-    font-size: 16px;
-    line-height: 19px;
-    * {
-      transition: 0.7s ease-in-out all;
-    }
+  background-color: #222224;
+  color: #fbfbfb;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  * {
+    transition: 0.7s ease-in-out all;
   }
-  .footer-wrap {
-    display: flex;
-    justify-content: space-between;
-    /* min-height: 79px; */
-    align-items: center;
-    background: #222224;
-    padding: 23px 15px;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  /* min-height: 79px; */
+  align-items: center;
+  background: #222224;
+  padding: 23px 15px;
 
-    @media (max-width:$tablet-bp) {
-      padding: 23px 30px;
-    }
-
-    @media (max-width:$mobile-bp) {
-      min-width: 343px;
-      flex-direction: column-reverse;
-      padding: 43px 15px 9px 15px;
-    }
-  }
-  .social-networks {
-    display: flex;
-    list-style-type: none;
-    gap: 7px;
-
-    @media (max-width:$mobile-bp) {
-      padding-bottom: 40px;
-    }
+  @media (max-width: $tablet-bp) {
+    padding: 23px 30px;
   }
 
-  .social-link {
-    display: flex;
-    height: 32px;
-    width: 32px;
-    color:#000000 ;
-    background-color: #FFFFFF;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    transition-property: background-color, color, transform;
-    transition-duration: 0.4s, 0.4s;
-    transition-delay: 0.2s, 0.2s;
-    transition-timing-function: cubic-bezier(1, 0.02, 0.74, 0.4);
+  @media (max-width: $mobile-bp) {
+    flex-direction: column-reverse;
+    padding: 43px 15px 9px 15px;
   }
-  .social-link-li {
+}
+.social-networks {
+  display: flex;
+  list-style-type: none;
+  gap: 7px;
 
+  @media (max-width: $mobile-bp) {
+    padding-bottom: 40px;
   }
-  .social-link:hover {
-      background-color: #F16D7F ;
-      color: #FFFFFF;
-      transform: scale(1.2 , 1.2);
-  }
+}
+
+.social-link {
+  display: flex;
+  height: 32px;
+  width: 32px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color, color, transform;
+  transition-duration: 0.4s, 0.4s;
+  transition-delay: 0.2s, 0.2s;
+  transition-timing-function: cubic-bezier(1, 0.02, 0.74, 0.4);
+}
+.social-link-li {
+}
+.social-link:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+  transform: scale(1.2, 1.2);
+}

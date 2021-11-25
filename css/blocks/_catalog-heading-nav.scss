@@ -1,84 +1,93 @@
 @import "../var";
-  /* Каталог */
-  .catalog-headings-links{
-    background-color: #F8F3F4;
+/* Каталог */
+.catalog-headings-links {
+  background-color: #f8f3f4;
+  /* * {
+    transition: 0.7s ease-in-out all;
+  } */
+  margin-top: 75px;
+}
+.catalog-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+  background-color: #f8f3f4;
+
+  @media (max-width: $mobile-bp) {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-  .catalog-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 148px;
-    background-color: #F8F3F4;
+}
+.catalog-heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: $main-color;
+  animation: cat-hed 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @keyframes cat-hed {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+    }
   }
-  .catalog-heading{
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28.8px;
+}
+
+.catalog-links {
+  list-style-type: none;
+  font-weight: 300;
+  line-height: 16.8px;
+  display: flex;
+  animation: cat-link 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @keyframes cat-link {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+    }
+  }
+}
+
+.catalog-links-cont {
+  &:nth-child(-n + 10)::after {
+    content: "/";
+    padding: 0 5px;
+  }
+  &:last-child {
+    font-weight: 700;
     color: $main-color;
-    animation: cat-hed 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    @keyframes cat-hed {
-      0% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-        -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-      }
-      100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-      }
-    }
   }
-  
-  .catalog-links{
-    list-style-type: none;
-    font-weight: 300;
-    line-height: 16.8px;
-    display: flex;
-    animation: cat-link 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
-    @keyframes cat-link {
-      0% {
-        -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-        -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-      }
-      100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-      }
-    }
+  &:last-child::after {
+    content: none;
   }
+}
+.catalog-links-style {
+  display: inline-block;
+  text-decoration: none;
+  color: #636363;
+  transition-property: color, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+  &:hover {
+    transform: scale(1.1, 1.1);
+    color: $main-color;
+    font-weight: 700;
+  }
+}
 
-  .catalog-links-cont  {
-      &:nth-child(-n+10)::after {
-        content: "/";
-        padding: 0 5px;
-      }
-      &:last-child {
-        font-weight: 700;
-        color: $main-color;
-      }
-      &:last-child::after {
-          content: none;     
-      }
-  }
-  .catalog-links-style{
-    display: inline-block;
-    text-decoration: none;
-    color: #636363;
-    transition-property: color, transform ;
-    transition-duration: 0.2s;
-    transition-delay: 0.2s;
-    &:hover {
-      transform: scale(1.1, 1.1);
-      color: $main-color;
-      font-weight: 700;
-    }
-  }
-
-  /* Каталог */
+/* Каталог */

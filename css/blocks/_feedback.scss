@@ -1,100 +1,118 @@
 @import "../var";
-.feedback{
-    background-image: url(../img/feedback-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    /*Весьма верояно это кривая заплатка*/
-    /* min-width: 1140px; */
-    background-size: cover;
-    min-width: 373px;
-    /*Проблемы с масштабом, разрешением, уезжает bgi*/
-    * {
-      transition: 0.7s ease-in-out all;
-    }
+.feedback {
+  background-image: url(../img/feedback-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*Весьма верояно это кривая заплатка*/
+  /* min-width: 1140px; */
+  background-size: cover;
+  min-width: 375px;
+  /*Проблемы с масштабом, разрешением, уезжает bgi*/
+  * {
+    transition: 0.7s ease-in-out all;
   }
-  .feedback-wrap {
-    min-height: 448px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 97px 15px;
+}
+.feedback-wrap {
+  min-height: 448px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 97px 15px;
 
-    @media (max-width:$tablet-bp) {
-      display: block;
-      padding: 64px 15px 140px 15px;
-      min-height: 0px;
-    }
+  @media (max-width: $tablet-bp) {
+    display: block;
+    padding: 64px 15px 140px 15px;
+    min-height: 0px;
+  }
 
-    @media (max-width:$mobile-bp) {
-      min-width: 343px;
-    }
+  /* @media (max-width: $mobile-bp) {
+    min-width: 343px;
+  } */
+}
+.feedback-msg {
+  max-width: 359.45px;
+  color: #222224;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 400;
 
+  @media (max-width: $tablet-bp) {
+    margin: 0 auto;
+    padding-bottom: 60px;
   }
-  .feedback-msg {
-    max-width: 359.45px;
-    color: #222224;
-    font-size: 20px;
-    line-height: 24px;
-    font-style: italic;
+}
+.feedback-img {
+  margin-bottom: 30px;
+}
+.feedback-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 557px;
+  padding: 0 30px;
 
-    @media (max-width:$tablet-bp) {
-      margin: 0 auto;
-      padding-bottom: 60px;
-    }
+  @media (max-width: $tablet-bp) {
+    margin: 0 auto;
   }
-  .feedback-img {
-    margin-bottom: 30px;
-  }
-  .feedback-subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 557px;
-    padding: 0 30px;
+}
+.feedback-subscribe-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30.1px;
+  margin-bottom: 32px;
 
-    @media (max-width:$tablet-bp) {
-      margin: 0 auto;
-    }
+  @media (max-width: $tablet-bp){
+    line-height: 29.16px;
   }
-  .feedback-subscribe-title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28.3px;
-    margin-bottom: 32px;
-  }
-  .feedback-subscribe-title::first-line {
-    font-weight: bold;
-    font-size: 24px;
-    max-width: 356px;
-  }
-  .feedback-form {
-    display: flex;
-  }
-  .feedback-mail-form {
-    border-radius: 24.5px 0 0 24.5px;
-    padding: 7px 64px 6px 22px; 
-    border: none;
+
+  @media (max-width: $mobile-bp) {
     font-size: 14px;
-    line-height: 17px;
-    height: 49px;
-    font-family: 'Lato';
-    width: 256px;
-    background: #E1E1E1;
+    line-height: 21.45px;
   }
-  .feedback-mail-form:focus {
-    outline: none;
+}
+.feedback-subscribe-title::first-line {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40.13px;
+  max-width: 356px;
+
+  @media (max-width: $tablet-bp) {
+    line-height: 38.88px;
   }
-  .feedback-button-sub {
-    height: 49px;
-    border-radius: 0 24.5px 24.5px 0;
-    background: #F16D7F;
-    border: none;
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 17px;
-    width: 100px;
-    font-family: 'Lato';
+
+  @media (max-width: $mobile-bp) {
+    line-height: 36.77px;
   }
-  .feedback-button-sub:focus {
-    outline: none;
-  }
+}
+.feedback-form {
+  display: flex;
+}
+.feedback-mail-form {
+  border-radius: 24.5px 0 0 24.5px;
+  padding: 7px 64px 6px 22px;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  height: 49px;
+  font-family: "Lato";
+  width: 256px;
+  background: #e1e1e1;
+}
+.feedback-mail-form:focus {
+  outline: none;
+}
+.feedback-button-sub {
+  height: 49px;
+  border-radius: 0 24.5px 24.5px 0;
+  background: #f16d7f;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100px;
+  font-family: "Lato";
+}
+.feedback-button-sub:focus {
+  outline: none;
+}
