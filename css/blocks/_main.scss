@@ -25,16 +25,16 @@ body {
 .wrap {
   max-width: 1140px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   padding: 0 15px;
   box-sizing: content-box;
 
   @media (max-width: $tablet-bp) {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
   }
 
   @media (max-width: $mobile-bp) {
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
     min-width: 345px;
   }
 }

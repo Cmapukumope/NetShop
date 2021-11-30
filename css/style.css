@@ -41,7 +41,7 @@ body {
 .wrap {
   max-width: 1140px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -49,13 +49,13 @@ body {
 
 @media (max-width: 1170px) {
   .wrap {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
   }
 }
 
 @media (max-width: 756px) {
   .wrap {
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
     min-width: 345px;
   }
 }
