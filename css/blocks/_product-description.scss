@@ -1,0 +1,120 @@
+@import "../var";
+.product-description {
+    margin-top: -60px;
+    margin-bottom: 129px;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: $tablet-bp) {
+        margin-top: 0px;
+    }
+}
+.product-description-wrap {
+    background: #ffffff;
+    border: 1px solid #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-description-content {
+    max-width: 641px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 65px;
+
+    @media (max-width: $mobile-bp) {
+        border: none;
+        &::after {
+            content: "";
+            width: calc(109% - 200px);
+            display: inline-block;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+}
+.product-description-heading-sex {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #f16d7f;
+    margin-top: 64.54px;
+}
+.product-description-heading-deco-line {
+    width: 63px;
+    height: 3.03px;
+    background-color: #ef5b70;
+    display: inline-block;
+}
+.product-description-heading-name {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #4d4d4d;
+    margin-top: 9px;
+    margin-bottom: 48.41px;
+}
+.product-description-heading-desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: #5e5e5e;
+    max-width: 555px;
+    display: inline-block;
+
+    @media (max-width: $mobile-bp) {
+        line-height: 20.03px;
+    }
+}
+.product-description-heading-price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #ef5b70;
+    margin-bottom: 65.04px;
+    margin-top: 32.27px;
+    overflow: hidden;
+
+    @media (max-width: $mobile-bp) {
+        line-height: 31.2px;
+    }
+}
+.product-description-filter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width: $mobile-bp) {
+        & > details {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}
+.product-description-button {
+    @media (max-width:$mobile-bp) {
+        margin-top: 64.09px;
+    }
+}
+
+.product-cat-corr {
+    margin-bottom: 128px;
+    @media (max-width:$tablet-bp) {
+        .products-catalog-card:last-child {
+            display: none;
+        }
+    }
+    
+}
+
+/* корректировка */
+/* .product-filter-drop-corr {
+    @media (max-width:$tablet-bp) {
+        max-width: 139px;
+        width: 100%;
+    }
+    @media (max-width:$mobile-bp) {
+        max-width: 100px;
+        width: 100%;
+    }
+} */
+/* корректировка */
