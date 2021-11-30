@@ -41,7 +41,7 @@ body {
 .wrap {
   max-width: 1140px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -49,13 +49,13 @@ body {
 
 @media (max-width: 1170px) {
   .wrap {
-    /* outline: 1px solid blue; */
+    outline: 1px solid blue;
   }
 }
 
 @media (max-width: 756px) {
   .wrap {
-    /* outline: 1px solid green; */
+    outline: 1px solid green;
     min-width: 345px;
   }
 }
@@ -313,8 +313,8 @@ body {
 /* to test */
 /* Заплатка для чекбокса */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  input[type='checkbox'],
-  input[type='radio'] {
+  .checkbox2[type='checkbox'],
+  .input2[type='radio'] {
     --active: #275EFE;
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, .3);
@@ -339,8 +339,8 @@ body {
     transition: background .3s, border-color .3s, box-shadow .2s;
     transition: background .3s, border-color .3s, box-shadow .2s, -webkit-box-shadow .2s;
   }
-  input[type='checkbox']:after,
-  input[type='radio']:after {
+  .checkbox2[type='checkbox']:after,
+  .input2[type='radio']:after {
     content: '';
     display: block;
     left: 0;
@@ -351,52 +351,52 @@ body {
     transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
     transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
   }
-  input[type='checkbox']:checked,
-  input[type='radio']:checked {
+  .checkbox2[type='checkbox']:checked,
+  .input2[type='radio']:checked {
     --b: var(--active);
     --bc: var(--active);
     --d-o: .3s;
     --d-t: .6s;
     --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
   }
-  input[type='checkbox']:disabled,
-  input[type='radio']:disabled {
+  .checkbox2[type='checkbox']:disabled,
+  .input2[type='radio']:disabled {
     --b: var(--disabled);
     cursor: not-allowed;
     opacity: .9;
   }
-  input[type='checkbox']:disabled:checked,
-  input[type='radio']:disabled:checked {
+  .checkbox2[type='checkbox']:disabled:checked,
+  .input2[type='radio']:disabled:checked {
     --b: var(--disabled-inner);
     --bc: var(--border);
   }
-  input[type='checkbox']:disabled + label,
-  input[type='radio']:disabled + label {
+  .checkbox2[type='checkbox']:disabled + label,
+  .input2[type='radio']:disabled + label {
     cursor: not-allowed;
   }
-  input[type='checkbox']:hover:not(:checked):not(:disabled),
-  input[type='radio']:hover:not(:checked):not(:disabled) {
+  .checkbox2[type='checkbox']:hover:not(:checked):not(:disabled),
+  .input2[type='radio']:hover:not(:checked):not(:disabled) {
     --bc: var(--border-hover);
   }
-  input[type='checkbox']:focus,
-  input[type='radio']:focus {
+  .checkbox2[type='checkbox']:focus,
+  .input2[type='radio']:focus {
     -webkit-box-shadow: 0 0 0 var(--focus);
             box-shadow: 0 0 0 var(--focus);
   }
-  input[type='checkbox']:not(.switch),
-  input[type='radio']:not(.switch) {
+  .checkbox2[type='checkbox']:not(.switch),
+  .input2[type='radio']:not(.switch) {
     width: 21px;
   }
-  input[type='checkbox']:not(.switch):after,
-  input[type='radio']:not(.switch):after {
+  .checkbox2[type='checkbox']:not(.switch):after,
+  .input2[type='radio']:not(.switch):after {
     opacity: var(--o, 0);
   }
-  input[type='checkbox']:not(.switch):checked,
-  input[type='radio']:not(.switch):checked {
+  .checkbox2[type='checkbox']:not(.switch):checked,
+  .input2[type='radio']:not(.switch):checked {
     --o: 1;
   }
-  input[type='checkbox'] + label,
-  input[type='radio'] + label {
+  .checkbox2[type='checkbox'] + label,
+  .input2[type='radio'] + label {
     font-size: 14px;
     line-height: 21px;
     display: inline-block;
@@ -404,10 +404,10 @@ body {
     cursor: pointer;
     margin-left: 4px;
   }
-  input[type='checkbox']:not(.switch) {
+  .checkbox2[type='checkbox']:not(.switch) {
     border-radius: 7px;
   }
-  input[type='checkbox']:not(.switch):after {
+  .checkbox2[type='checkbox']:not(.switch):after {
     width: 5px;
     height: 9px;
     border: 2px solid var(--active-inner);
@@ -418,14 +418,14 @@ body {
     -webkit-transform: rotate(var(--r, 20deg));
             transform: rotate(var(--r, 20deg));
   }
-  input[type='checkbox']:not(.switch):checked {
+  .checkbox2[type='checkbox']:not(.switch):checked {
     --r: 43deg;
   }
-  input[type='checkbox'].switch {
+  .checkbox2[type='checkbox'].switch {
     width: 38px;
     border-radius: 11px;
   }
-  input[type='checkbox'].switch:after {
+  .checkbox2[type='checkbox'].switch:after {
     left: 2px;
     top: 2px;
     border-radius: 50%;
@@ -435,17 +435,17 @@ body {
     -webkit-transform: translateX(var(--x, 0));
             transform: translateX(var(--x, 0));
   }
-  input[type='checkbox'].switch:checked {
+  .checkbox2[type='checkbox'].switch:checked {
     --ab: var(--active-inner);
     --x: 17px;
   }
-  input[type='checkbox'].switch:disabled:not(:checked):after {
+  .checkbox2[type='checkbox'].switch:disabled:not(:checked):after {
     opacity: .6;
   }
-  input[type='radio'] {
+  .input2[type='radio'] {
     border-radius: 50%;
   }
-  input[type='radio']:after {
+  .input2[type='radio']:after {
     width: 19px;
     height: 19px;
     border-radius: 50%;
@@ -454,7 +454,7 @@ body {
     -webkit-transform: scale(var(--s, 0.7));
             transform: scale(var(--s, 0.7));
   }
-  input[type='radio']:checked {
+  .input2[type='radio']:checked {
     --s: .5;
   }
 }
@@ -2638,6 +2638,8 @@ details summary::-webkit-details-marker {
 /* Описание товара */
 /* Страница товара */
 /* Регистрация */
+/* Переменные */
+/* Переменные */
 .registration {
   margin-top: 31px;
   margin-bottom: 96px;
@@ -2647,6 +2649,15 @@ details summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 756px) {
+  .registration-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .registration-form {
@@ -2659,6 +2670,12 @@ details summary::-webkit-details-marker {
           flex-direction: column;
   max-width: 358.99px;
   text-align: left;
+}
+
+@media (max-width: 756px) {
+  .registration-form {
+    max-width: 100%;
+  }
 }
 
 .registration-form-heading {
@@ -2674,6 +2691,7 @@ details summary::-webkit-details-marker {
   padding-bottom: 13px;
   margin-top: 20px;
   margin-bottom: 20px;
+  min-width: 360px;
 }
 
 .registration-radio {
@@ -2682,6 +2700,16 @@ details summary::-webkit-details-marker {
   font-size: 11px;
   line-height: 13.2px;
   color: #000000;
+}
+
+.registration-radio > label:last-child {
+  display: none;
+}
+
+@media (max-width: 1170px) {
+  .registration-radio > label:last-child {
+    display: inline;
+  }
 }
 
 .registration-radio-row {
@@ -2695,8 +2723,8 @@ details summary::-webkit-details-marker {
 }
 
 .registration-radio-style {
-  height: 17px;
-  width: 17px;
+  height: 17px !important;
+  width: 17px !important;
   margin-right: 10px;
 }
 
@@ -2718,6 +2746,25 @@ details summary::-webkit-details-marker {
   height: 50px;
   width: 167px;
   border-style: none;
+  -webkit-transition: 0.7s ease-in-out all;
+  transition: 0.7s ease-in-out all;
+}
+
+.registration-form-button > svg {
+  fill: #FFFFFF;
+  -webkit-transition: 0.7s ease-in-out all;
+  transition: 0.7s ease-in-out all;
+}
+
+.registration-form-button:hover {
+  background-color: #fff;
+  color: #F16D7F;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.registration-form-button:hover > svg {
+  fill: #F16D7F;
 }
 
 .registration-description {
@@ -2729,17 +2776,47 @@ details summary::-webkit-details-marker {
   margin-left: 128px;
 }
 
+@media (max-width: 1170px) {
+  .registration-description {
+    margin-left: 20px;
+  }
+}
+
 .registration-description-heading {
   margin-top: 33px;
   margin-bottom: 22px;
+}
+
+@media (max-width: 1170px) {
+  .registration-description-heading {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
 }
 
 .registration-description-desc {
   margin-bottom: 22px;
 }
 
+@media (max-width: 1170px) {
+  .registration-description-desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+
 .registration-description-list {
   list-style-type: none;
+}
+
+@media (max-width: 1170px) {
+  .registration-description-list {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+  }
 }
 
 .registration-description-list li {

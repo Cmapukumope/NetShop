@@ -10,8 +10,8 @@
 
 /* Заплатка для чекбокса */
 @supports(-webkit-appearance: none) or (-moz-appearance: none) {
-  input[type='checkbox'],
-  input[type='radio'] {
+  .checkbox2[type='checkbox'],
+  .input2[type='radio'] {
     --active: #275EFE;
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, .3);
@@ -87,7 +87,7 @@
       margin-left: 4px;
     }
   }
-  input[type='checkbox'] {
+  .checkbox2[type='checkbox'] {
     &:not(.switch) {
       border-radius: 7px;
       &:after {
@@ -129,7 +129,7 @@
       }
     }
   }
-  input[type='radio'] {
+  .input2[type='radio'] {
     border-radius: 50%;
     &:after {
       width: 19px;
@@ -198,88 +198,7 @@
   /* Страница товара */
   
   /* Регистрация */
-  .registration {
-    margin-top: 31px;
-    margin-bottom: 96px;
-  }
-  .registration-wrap {
-    display: flex;
-  }
-  .registration-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 358.99px;
-    text-align: left;
-  }
-  .registration-form-heading {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19.2px;
-    margin-top: 33px;
-  }
-  .registration-form-input {
-    padding-left: 17px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .registration-radio {
-    margin-top: 11px;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13.2px;
-    color: #000000;
-  }
-  .registration-radio-row {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 20px;
-  }
-  .registration-radio-style {
-    height: 17px;
-    width: 17px;
-    margin-right: 10px;
-  }
-  .registration-form-description {
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 15.6px;
-    color: #B1B1B1;
-    margin-top: -5px;
-    margin-bottom: 39px;
-  }
-  .registration-form-button {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.8px;
-    color: #FFFFFF;
-    background-color: #F16D7F;
-    height: 50px;
-    width: 167px;
-    border-style: none;
-  }
-  .registration-description {
-    max-width: 652px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28.8px;
-    text-align: left;
-    margin-left: 128px;
-  }
-  .registration-description-heading {
-    margin-top: 33px;
-    margin-bottom: 22px;
-  }
-  .registration-description-desc {
-    margin-bottom: 22px;
-  }
-  .registration-description-list {
-    list-style-type: none;
-  }
-  .registration-description-list li {
-    margin-bottom: 16px;
-  }
+ @import "blocks/registration";
   /* Регистрация */
   
   /* Корзина */
