@@ -1,0 +1,49 @@
+@import "../var";
+/* Основа */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* transition: 0.7s ease-in-out all; */
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 16.8px;
+  text-align: center;
+  list-style-type: none;
+  background: #ffffff;
+}
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+  padding: 0 15px;
+  box-sizing: content-box;
+
+  @media (max-width: $tablet-bp) {
+    /* outline: 1px solid blue; */
+  }
+
+  @media (max-width: $mobile-bp) {
+    /* outline: 1px solid green; */
+    min-width: 345px;
+  }
+}
+.hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: -999999px;
+  margin: -1px;
+}
+/* Основа */

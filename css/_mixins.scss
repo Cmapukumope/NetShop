@@ -1,0 +1,12 @@
+/* Миксины */
+@mixin list($margin: 0, $padding: 0) {
+    margin: $margin;
+    padding: $padding;
+    list-style-type: none;
+}
+
+@mixin test {
+    
+}
+
+/* Миксины */

@@ -1,0 +1,108 @@
+@import "../var";
+/* примеры анимаций кнопок */
+.btn {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: $main-color;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    /* border: 1px solid $main-color; */
+    /* outline: 1px solid $main-color; */
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition-property: background-color, color, transform; //уменьшает нагрузку
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 0.5s, 0s;
+    /* transition-timing-function: ease-in; */
+    transition-timing-function: cubic-bezier(1, 0.02, 0, 0.99);
+    /* transform: rotate(45deg); */
+    /* transform: rotate(-25deg); */
+    &:hover {
+        background-color: purple;
+        color: #fff;
+        /* border: 1px solid #fff; */
+        box-shadow: 0px 0px 10px purple;
+        transform: rotate(360deg);
+        /* transform: rotateX(360deg); */
+        /* transform: rotateY(360deg); */
+        /* transform: scale(1.5 , 2); */
+        /* transform: translate(-5px, 50%) */
+        /* transform: skew(35deg, -20deg); */
+        /* transform: rotateX(360deg) scale(1.5 , 2) translate(-5px, 50%); */
+    }
+}
+.btn-1 {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: $main-color;
+    text-decoration: none;
+    background-color: rgb(131, 217, 238);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    &:hover {
+        animation: bounce 0.5s infinite alternate;
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+/* примеры анимаций кнопок */
+
+/* Основа кнопки */
+.products-catalog-button {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 10.5px 35.5px;
+    border: 1px solid #ff6a6a;
+    color: #f26376;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 95px;
+    margin-top: 48px;
+    width: 211px;
+    /* background-color: none; */
+    transition-property: background-color, color, transform;
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.2s, 0.2s;
+    &:hover {
+        color: #ffffff;
+        background-color: $main-color;
+        transform: rotate(360deg);
+        .products-catalog-button-img {
+            fill: #ffffff;
+        }
+    }
+    &-img {
+        fill: $main-color;
+        margin-right: 20px;
+        transition-property: fill;
+        transition-duration: 0.3s;
+        transition-delay: 0.2s;
+    }
+
+    @media (max-width: $tablet-bp) {
+        margin-top: 32.48px;
+        margin-bottom: 64.52px;
+    }
+
+    @media (max-width: $mobile-bp) {
+        margin-top: 40.61px;
+        margin-bottom: 96px;
+    }
+}
+/* Основа кнопки */
