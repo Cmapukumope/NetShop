@@ -28,6 +28,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
@@ -182,7 +185,7 @@ body {
   margin-bottom: 95px;
   margin-top: 48px;
   width: 211px;
-  background-color: none;
+  /* background-color: none; */
   -webkit-transition-property: background-color, color, -webkit-transform;
   transition-property: background-color, color, -webkit-transform;
   transition-property: background-color, color, transform;
@@ -217,7 +220,7 @@ body {
 
 @media (max-width: 1170px) {
   .products-catalog-button {
-    margin-top: 32.48;
+    margin-top: 32.48px;
     margin-bottom: 64.52px;
   }
 }
@@ -1257,14 +1260,26 @@ body {
 
 .product-catalog-desc-wrap {
   padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 161px;
 }
 
 .product-catalog-desc-wrap > a {
+  /* min-height: 30px; */
   text-decoration: none;
   color: #000000;
   /* cursor: pointer; */
   display: inline-block;
-  height: 0px;
+  /* height: 0px; */
 }
 
 .product-catalog-desc-wrap > a > h3:hover {
@@ -1304,6 +1319,13 @@ body {
 .products-card-price:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  padding-left: 20px;
+}
+
+@media (max-width: 756px) {
+  .products-card-price:hover {
+    padding-left: 40px;
+  }
 }
 
 /* products */
@@ -2825,6 +2847,13 @@ details summary::-webkit-details-marker {
 
 /* Регистрация */
 /* Корзина */
+/* Переменные */
+/* Переменные */
+.cart * {
+  -webkit-transition: 0.7s ease-in-out all;
+  transition: 0.7s ease-in-out all;
+}
+
 .cart-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2871,18 +2900,31 @@ details summary::-webkit-details-marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* height: 306px;
-    width: 652px; */
-  width: 100%;
+  height: 306px;
+  width: 652px;
+  /* width: 100%; */
   -webkit-box-shadow: 20px 15px 20px 4px rgba(33, 33, 33, 0.35);
           box-shadow: 20px 15px 20px 4px rgba(33, 33, 33, 0.35);
   margin-bottom: 40px;
+  /* transition: 0.7s ease-in-out all; */
+}
+
+@media (max-width: 1170px) {
+  .cart-products-card {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 756px) {
   .cart-products-card {
     min-width: 358px;
   }
+}
+
+.cart-products-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .cart-products-card-img {
@@ -2947,7 +2989,7 @@ details summary::-webkit-details-marker {
   display: inline-block;
   overflow: hidden;
   max-height: 26px;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 @media (max-width: 756px) {
@@ -3037,6 +3079,12 @@ details summary::-webkit-details-marker {
   line-height: 16.8px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.cart-products-button-style:hover {
+  color: #F16D7F;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 756px) {
@@ -3155,6 +3203,12 @@ details summary::-webkit-details-marker {
   border: 1px solid #a4a4a4;
 }
 
+.cart-description-form-button:hover {
+  color: #F16D7F;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media (max-width: 1170px) {
   .cart-description-form-button {
     min-width: 102px;
@@ -3231,6 +3285,13 @@ details summary::-webkit-details-marker {
   width: 275px;
   border: none;
   margin-bottom: 42px;
+}
+
+.cart-description-price-button:hover {
+  color: #F16D7F;
+  background-color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .lol {

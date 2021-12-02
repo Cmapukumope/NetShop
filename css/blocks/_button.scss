@@ -75,7 +75,7 @@
     margin-bottom: 95px;
     margin-top: 48px;
     width: 211px;
-    background-color: none;
+    /* background-color: none; */
     transition-property: background-color, color, transform;
     transition-duration: 0.3s, 0.3s;
     transition-delay: 0.2s, 0.2s;
@@ -96,7 +96,7 @@
     }
 
     @media (max-width: $tablet-bp) {
-        margin-top: 32.48;
+        margin-top: 32.48px;
         margin-bottom: 64.52px;
     }
 

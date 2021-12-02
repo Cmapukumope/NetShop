@@ -1,16 +1,20 @@
+@import "../var";
 .cart {
+    & * {
+        transition: 0.7s ease-in-out all;
+    }
 }
 .cart-wrap {
     display: flex;
     justify-content: space-between;
     margin-top: 96px;
 
-    @media (max-width:$tablet-bp) {
+    @media (max-width: $tablet-bp) {
         display: block;
         margin-top: 39px;
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         padding: 0 8px;
         min-width: 359px;
     }
@@ -18,38 +22,47 @@
 .cart-products {
     max-width: 652px;
 
-    @media (max-width:$tablet-bp) {
+    @media (max-width: $tablet-bp) {
         width: 100%;
         max-width: 100%;
         min-width: 652px;
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         min-width: 358px;
     }
 }
 .cart-products-card {
     display: flex;
-    /* height: 306px;
-    width: 652px; */
-    width: 100%;
+    height: 306px;
+    width: 652px;
+    /* width: 100%; */
     box-shadow: 20px 15px 20px 4px rgba(33, 33, 33, 0.35);
     margin-bottom: 40px;
+    /* transition: 0.7s ease-in-out all; */
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $tablet-bp) {
+        width: 100%;
+        height: 100%;
+    }
+    @media (max-width: $mobile-bp) {
         min-width: 358px;
+    }
+
+    &:hover {
+        transform: scale(1.03);
     }
 }
 .cart-products-card-img {
     height: 306px;
     width: 262px;
 
-    @media (max-width:$tablet-bp) {
+    @media (max-width: $tablet-bp) {
         /* width: 100%;
         height: 100%; */
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         width: 143.86px;
         height: 188px;
     }
@@ -64,7 +77,7 @@
     /* margin-left: 31px; */
     padding-left: 31px;
 
-    @media (max-width:$tablet-bp) {
+    @media (max-width: $tablet-bp) {
         width: 100%;
         padding-left: 17.02px;
         /* min-width: 343px; */
@@ -79,7 +92,7 @@
     overflow: hidden;
     max-height: 58px;
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         font-size: 16px;
         line-height: 19.2px;
         margin-top: 13.52px;
@@ -91,8 +104,7 @@
     display: inline-block;
     overflow: hidden;
     max-height: 26px;
-    max-width: 70%;
-
+    max-width: 100%;
     @media (max-width: $mobile-bp) {
         font-size: 14px;
         line-height: 16.8px;
@@ -125,12 +137,12 @@
         fill: #575757;
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         width: 9.88px;
         height: 11.06px;
         & > svg {
             width: 9.88px;
-            height: 11.06px; 
+            height: 11.06px;
         }
     }
 }
@@ -139,12 +151,12 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width:$tablet-bp) {
+    @media (max-width: $tablet-bp) {
         justify-content: center;
         gap: 48px;
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         gap: 9px;
     }
 }
@@ -157,8 +169,12 @@
     line-height: 16.8px;
     color: #000000;
     text-transform: uppercase;
+    &:hover {
+        color: $main-color;
+        transform: scale(1.05);
+    }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         max-height: 33px;
         font-size: 12px;
         line-height: 14.4px;
@@ -233,13 +249,16 @@
     line-height: 13.2px;
     background-color: #ffffff;
     border: 1px solid #a4a4a4;
-
-    @media (max-width:$tablet-bp) {
+    &:hover {
+        color: $main-color;
+        transform: scale(1.05);
+    }
+    @media (max-width: $tablet-bp) {
         min-width: 102px;
         padding: 11px 10px;
     }
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         width: 40%;
     }
 }
@@ -251,7 +270,7 @@
     flex-direction: column;
     align-items: center;
 
-    @media (max-width:$mobile-bp) {
+    @media (max-width: $mobile-bp) {
         width: 100%;
     }
 }
@@ -293,8 +312,12 @@
     width: 275px;
     border: none;
     margin-bottom: 42px;
+    &:hover {
+        color: $main-color;
+        background-color: #fff;
+        transform: scale(1.05);
+    }
 }
-
 
 .lol {
     font-size: calc(100vw / 30) !important;
